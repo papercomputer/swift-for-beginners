@@ -1,0 +1,107 @@
+let mounthsInYearEng  = [1 : "Jan", 
+2 : "Feb", 
+3 : "Mar", 
+4 : "Apr", 
+5 : "May", 
+6 : "jun", 
+7 : "Jul", 
+8 : "Aug", 
+9 : "sep", 
+10 : "Oct",
+11 : "Nov", 
+12 : "Dec" ]
+//2
+let mounthsOfYearRus = [1  : "Январь",
+                      2  : "Февраль",
+                      3  : "Март",
+                      4  : "Апрель",
+                      5  : "Май",
+                      6  : "Июль",
+                      7  : "Июнь",
+                      8  : "Август",
+                      9  : "Сентябрь",
+                      10 : "Октябрь",
+                      11 : "Ноябрь",
+                      12 : "Декабрь"]
+ //3                     
+let airports  = [
+    "YYT" : "Newfoundland", 
+    "GHA" : "Ghardaya", 
+    "HME" : "Hassi-Messaoud", 
+    "SNN" : "Shannon"]
+
+//4
+let daysInAWeek : [Int:String] = [
+    1 : "Monday", 
+    2 : "tuesday", 
+    3 : "wednesday", 
+    4 : "thursday", 
+    5 : "friday", 
+    6 : "saturday", 
+    7 : "sunday"]
+
+//5
+let family = [
+    "mama" : "Tanya", 
+    "papa" : "Sergey",
+    "babushka": "Valentina PEtrovna",
+    "cat": "Murka"]
+//6
+let animalsInZoo = ["Zebra" : 4,
+                    "giraffe" : 2,
+                    "hippo" : 4,
+                    "tiger" : 2,
+                    "elephant" : 5]
+                    
+                    
+//7
+let iceCreamPrices = ["white" : 2.5,
+                      "choccolate": 2.6,
+                      "withFruits": 2.6,
+                      "frozenJuice": 2.1]
+                      
+//8  
+let seasonPreferences = ["spring" : "I like Spring"
+                         "summer" : "i am crazy about summer"
+                         "autumn" : "I am thoughtful at autumn"
+                         "winter" : "I am a bit cold" ]
+           
+                //10
+var emptyDict = [String:String]()
+
+if emptyDict.isEmpty {
+    emptyDict["1st key"]  = "1st value"
+    emptyDict["2nd key"] = "2nd value"
+    print (emptyDict)
+}else{
+    print("Is not empty")
+}
+
+// for (key, value) in mounthsOfYearEng {
+//     print("\(key) - \(value)")
+// }
+
+
+print (airports)
+print (airports.keys)
+print (airports.values)
+
+if airports.isEmpty {
+  print("The airports dictionary is empty.")
+} else {
+  print("The airports dictionary is not empty.")
+}
+
+if let airportName = airports ["YYT"] {
+    print ("The airport name is \(airportName)")
+} else {
+    print ("No name")
+}
+
+
+
+
+
+
+
+
